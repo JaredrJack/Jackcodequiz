@@ -7,7 +7,7 @@ var timeleft = 60;
 var timeInterval;
 
 var scores = [];
-var timerEl = document.getElementById('time');
+var timerEl = document.getElementById('timer');
 var quizContainerEl = document.createElement("div");
 var questionEl = document.createElement('h1');
 questionEl.className = "question";
@@ -24,7 +24,7 @@ answerChoiceFour.className = ("btn");
 var closingContainerEl = document.createElement("div")
 var viewScoreContainer = document.createElement("div");
 
-// create event listener for start button
+// 
 var countdown = function () {
     timeInterval = setInterval(function () {
         if (timeleft > 0) {
@@ -36,7 +36,7 @@ var countdown = function () {
             clearInterval(timeInterval);
             gameOver();
         }
-    }, 100);
+    }, 1000);
 }
 // create start function that will run o n button click
 var beginQuiz = function () {

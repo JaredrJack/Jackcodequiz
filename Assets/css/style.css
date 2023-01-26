@@ -11,9 +11,10 @@ header {
 
 main {
   text-align: center;
+  background-image:url(./images/kenny-eliason-KYxXMTpTzek-unsplash.jpg);
 }
 
-.opening-message {
+.quizmessage {
   font-size: 1.3em;
 }
 
