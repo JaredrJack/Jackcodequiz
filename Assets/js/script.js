@@ -1,9 +1,9 @@
 // create the global variables for all the classes to target the elements you will need to use
-containerEl = document.querySelectorAll(".startpage");
+containerEl = document.querySelectorAll(".opening-container");
 
 // create question variable. (look into array of objects to store question along with answer and possible options.)
 var scoreIdCounter = 0;
-var timeleft = 60;
+var timeleft = 75;
 var timeInterval;
 
 var scores = [];
@@ -65,7 +65,7 @@ var beginQuiz = function () {
 }
 
 var wrongAnswer = function () {
-    timeleft = timeleft - 5;
+    timeleft = timeleft - 10;
     questionTwo();
 }
 
@@ -131,7 +131,7 @@ var rightAnswerThree = function () {
 }
 var wrongAnswerThree = function () {
     timeleft = timeleft - 10;
-    questionFour() ;
+    questionFour();
 }
 
 var questionFour = function () {

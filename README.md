@@ -1,5 +1,5 @@
 # Jackcodequiz
-![Alt text][def]
+![Alt text]["./Assets/css/images/codequizscreenshot.png]
 
 # Jack Quiz Code Challenge
 ##### Table of Contents  
