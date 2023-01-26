@@ -1,92 +1,78 @@
-*,
-
-/* set the font for the page */
-body {
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 16px;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-h1{
-  font-size: 28px;
-}
-
-/* style input fields */
-input {
-  height: 50px;
-  width: 100%;
-  padding: 6px;
-  font-size: 2.4em;
-  border: none;
-}
-
-/* ul styling, remove bullets */
-ul {
-  list-style-type: none;
-  padding: 1px;
-}
-
-/* style list items, indent a bit */
-li {
-  margin-left: 20px; 
-  padding: 5px;
-  max-width: 40%;
-  background: #7fddfa;   /* make the background color light blue */
-  margin-left:auto;
-  margin-right: auto;
-}
-
-/* make every other li color white */
-li:nth-child(odd) { 
-  background:#fff; 
-  color: black;
-}
-
-/* style the question buttons to only have a white background */
-li button {
-  border: none;
-  height: 40px;
-  cursor: pointer;
-  background-color: #006eff;
+.view-scores:hover {
+  background-color: black;
   color: white;
-  font-size: 1em;
-  border-radius: 10px;
 }
 
-/* change the button background to light blue on mouse over */
-li button:hover {
-  background-color: #00c3ff;
+main {
+  text-align: center;
 }
 
-/* style the div that holds the quiz elements */
-.quiz {
-  width: 800px;
-  margin: 0 auto;
-  margin-top: 40px;
+.opening-message {
+  font-size: 1.3em;
 }
 
-/* make all the buttons this blue color */
-.actionButton {
-  background-color: #006eff;
-  color: #fff;
+.question {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn {
   border-radius: 5px;
+  font-size: 1.5rem;
+  margin: 5px 0;
 }
 
-/* make all the buttons this blue color on mouse over */
-.actionButton:hover {
-  background-color: #00c3ff;
+.btn:hover {
+  background-color: black;
+  color: white;
 }
 
-/* ensure the background color od the quiz buttons in the list items are white */
-#quiz-list li{
-  background-color: #fff;
-  margin-left: 0px;
-  margin-right: auto;
-  
+.answer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline-start: 0;
 }
 
-/* center the div "All Done" */
-#quizFinish {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 30%;
+form {
+  display: flex;
+  justify-content: center;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  gap: 10px;
+}
+
+.closing-message {
+  font-size: 1.3em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+input {
+  margin-top: 1.7em;
+  margin-bottom: 1.7em;
+  width: 70px;
+}
+
+.submit-btn {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.submit-btn:hover {
+  background-color: rgb(22, 4, 88);
+  color: white;
+}
+
+.view-score-list {
+  padding-inline-start: 0px;
+  font-size: 1.3em;
 }
